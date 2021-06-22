@@ -1,20 +1,28 @@
 .side-menu {
+    background: rgb(29,62,60);
+    background: linear-gradient(0deg, rgba(29,62,60,1) 15%, rgba(39,92,86,1) 60%, rgba(79,124,114,1) 90%, rgba(153, 184, 184, 1) 100%);
+}
+
+button {
+    border: 0;
+    margin: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+button:hover {
     background-color: #275c58;
 }
 
 .icon-svg {
-    width: 4rem;
-    height: 4rem;
-    padding: 0.5rem;
-    margin: 1rem 0rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 20%;
-    background-color: #000;
 }
 
 ul, li {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
 }
 
 img, li, ul {
