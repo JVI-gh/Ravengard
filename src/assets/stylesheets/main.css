@@ -1,0 +1,28 @@
+.side-menu {
+    background-color: #275c58;
+}
+
+.icon-svg {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    border-radius: 20%;
+    background-color: #000;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img, li, ul {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  
