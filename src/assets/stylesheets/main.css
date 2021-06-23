@@ -1,36 +1,79 @@
+body {
+    background: transparent;
+}
 .side-menu {
-    background: rgb(29,62,60);
-    background: linear-gradient(0deg, rgba(29,62,60,1) 15%, rgba(39,92,86,1) 60%, rgba(79,124,114,1) 90%, rgba(153, 184, 184, 1) 100%);
+    background:rgba(0, 0, 0, 0.9);
+  /* background: rgb(29,62,60);
+    background: linear-gradient(0deg, rgba(29,62,60,1) 15%, rgba(39,92,86,1) 60%, rgba(79,124,114,1) 90%, rgba(153, 184, 184, 1) 100%); */
+  /* background: linear-gradient( 0deg, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0.9) 40%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.7) 80%, rgba(0, 0, 0, 0.6) 100%); */
+  /* background: linear-gradient( 180deg, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 0.9) 66%, rgba(0, 0, 0, 0.8) 100%); */
+  border-right: 1px solid black;
 }
 
 button {
-    border: 0;
-    margin: 0.3rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
+  border: 0;
+  margin: 0.5rem;
+  background-color: #4f7c72;
+  border-radius: 50%;
+  box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
-    background-color: #275c58;
+  background-color: #275c58;
 }
 
 .icon-svg {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 20%;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 20%;
 }
 
-ul, li {
-    list-style: none;
+button.active {
+  background-color: #ccc;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 1rem;
+}
+
+img,
+li,
+ul {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.main-view {
+    background-color: #4f7c72;
+    padding:0rem 3rem;
+    color: #fff;
+}
+
+.tabs-view {
+  display: none;
+}
+
+.goBack {
+    background-color: #99b8b8;
+}
+
+#Main {
     padding: 1rem;
+    background:rgba(0, 0, 0, 0.9);
+    
 }
 
-img, li, ul {
-    user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-  }
-  
+.icon-tab {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem
+}
+
+
+
