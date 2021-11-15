@@ -1,31 +1,24 @@
-const MENUBUTTONS = document.getElementsByClassName("menu-button");
-const MENUBUTTONSNAMES = [
-  "Main",
-  "Profile",
-  "News",
-  "Friendlist",
-  "Communities",
-  "Options",
-];
-const TABS = document.getElementsByClassName("tabs-view");
-MENUBUTTONS[0].className += " active";
-TABS[0].style.display = "block";
+const NAVMENUITEMS = document.querySelectorAll("ul button");
+const SECTIONS = document.querySelectorAll("section");
 
-for (let c = 0; c < MENUBUTTONS.length; c++) {
-  MENUBUTTONS[c].addEventListener("click", (e) => {
-    openTab(e, MENUBUTTONSNAMES[c]);
-  });
+NAVMENUITEMS[0].classList.add("activeSection");
+SECTIONS[0].classList.add("activeSection");
+
+NAVMENUITEMS.forEach(function (element, i) {
+  element.addEventListener("click", () => {
+    removePreviousActiveSection();
+    setActiveSection(element, i)
+  })
+});
+
+function removePreviousActiveSection () {
+  let activeSection = document.querySelectorAll(".activeSection");
+  activeSection.forEach(element => {
+    element.classList.remove("activeSection");
+  })
 }
 
-function openTab(evt, tab) {
-  for (let i = 0; i < TABS.length; i++) {
-    TABS[i].style.display = "none";
-  }
-
-  for (let i = 0; i < MENUBUTTONS.length; i++) {
-    MENUBUTTONS[i].className = MENUBUTTONS[i].className.replace(" active", "");
-  }
-
-  document.getElementById(tab).style.display = "block";
-  evt.currentTarget.className += " active";
+function setActiveSection(element, index) {
+  element.classList.add("activeSection");
+  SECTIONS[index].classList.add("activeSection");
 }

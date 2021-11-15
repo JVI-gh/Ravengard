@@ -8,7 +8,8 @@ SUBMITBUTTON.addEventListener("click", (e) => {
     let username = USERINPUT.value;
     let password = PASSWORDINPUT.value;
 
-    login(username, password);
+    window.location.href = "./assets/screens/main.html";
+    //login(username, password);
 });
 
 login = (username, password) => {
