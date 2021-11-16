@@ -16,3 +16,63 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.overflowY {
+  height: 380px;
+  overflow-y: scroll;
+}
+
+.panels-2-row {
+  display: flex;
+  height: 600px
+}
+
+.w-60 {
+  display: inline-block;
+  width: 60%;
+}
+
+.w-40 {
+  display: inline-block;
+  width: 35%;
+  margin-left: 5%;
+}
+
+
+/* SCROLL BAR STYLE */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* SCROLL BAR STYLE */
+
+/* CONTEXT MENU STYLE */
+
+.contextMenu {
+  top: 1.275rem;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height:160px;
+  margin: 0rem 2rem;
+  border-radius: 2rem;
+  background-color: #eee;
+}
+
+/* CONTEXT MENU STYLE */
