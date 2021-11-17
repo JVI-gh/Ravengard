@@ -13,3 +13,5 @@ function updateDescriptionContent (element) {
     DESCRIPTIONTITLE.innerText = element.querySelector(".item-Title").innerText;
     DESCRIPTIONCONTENT.innerText = element.querySelector(".item-Description").innerText;
 }
+
+updateDescriptionContent(PLAYERINVENTORY[0].firstElementChild);

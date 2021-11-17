@@ -17,9 +17,18 @@
   transform: translateY(-50%);
 }
 
+.overflow {
+  overflow: hidden;
+  font-size: 0.7rem;
+}
+
 .overflowY {
   height: 380px;
   overflow-y: scroll;
+}
+
+.hide {
+  display: none;
 }
 
 .panels-2-row {
