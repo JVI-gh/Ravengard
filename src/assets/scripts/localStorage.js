@@ -8,11 +8,11 @@ let initialData = {
         ["Gem", "Common", "Common trade item", "50", "junk"],
         ["Ruby", "Uncommon", "Uncommon gemstone", "100", "junk"],
         ["Standard Helmet", "common", "Initial helmet equipment", "10", "Helmet"],
-        ["Standard Chest", "common", "Initial chest equipment", "10", "chest"],
-        ["Standard Bottom", "common", "Initial bottom equipment", "10", "bottom"],
-        ["Standard Shoes", "common", "Initial shoes equipment", "10", "shoes"],
-        ["Standard Weapon", "common", "Initial weapon equipment", "10", "weapon"],
-        ["Standard Sub-Weapon", "common", "Initial sub-weapon equipment", "10", "subweapon"]
+        ["Standard Chest", "common", "Initial chest equipment", "10", "Chest"],
+        ["Standard Bottom", "common", "Initial bottom equipment", "10", "Bottom"],
+        ["Standard Shoes", "common", "Initial shoes equipment", "10", "Shoes"],
+        ["Standard Weapon", "common", "Initial weapon equipment", "10", "Weapon"],
+        ["Standard Sub-Weapon", "common", "Initial sub-weapon equipment", "10", "Subweapon"]
     ]
 }
 

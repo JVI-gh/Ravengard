@@ -32,13 +32,7 @@ DATAINPUT.forEach((inputList, index) => {
         element.innerText = playerData.gold;
         break;
       case 4:
-        playerData.inventory.forEach((item) => {
-              if(element.id === 'Helmet') {
-                  if(item[4] === element.id) {
-                    element.innerHTML += "<option value='" + item[0]+ "'>" + item[0] + "</option>"
-                  }
-              }
-          })
+        equipmentUpdate(element);
         break;
       case 5:
         inventoryUpdate(element);
@@ -48,6 +42,15 @@ DATAINPUT.forEach((inputList, index) => {
     }
   });
 });
+
+function equipmentUpdate(container) {
+  playerData.inventory.forEach((item) => {
+    if (container.id === item[4]) {
+      container.innerHTML +=
+        "<option value='" + item[0] + "'>" + item[0] + "</option>";
+    }
+  });
+}
 
 function inventoryUpdate(container) {
   playerData.inventory.forEach((item) => {

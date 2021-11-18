@@ -119,6 +119,18 @@ article h1 {
   height: 500px;
 }
 
+.equipment label {
+  margin-top: 1rem;
+  background-color:#4f7c72;
+  width: 100%;
+}
+
+.gear {
+  width: 100%;
+  text-align: center;
+  margin: 0rem 0rem 2rem 0rem;
+}
+
 #userIcon {
   padding: 2rem;
   text-align: center;
