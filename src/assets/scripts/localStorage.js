@@ -13,7 +13,9 @@ let initialData = {
         ["Standard Shoes", "common", "Initial shoes equipment", "10", "Shoes"],
         ["Standard Weapon", "common", "Initial weapon equipment", "10", "Weapon"],
         ["Standard Sub-Weapon", "common", "Initial sub-weapon equipment", "10", "Subweapon"]
-    ]
+    ],
+    "stats": ["8","8","8","8","8","8"],
+    "race": "human"
 }
 
 window.localStorage.setItem('playerData', JSON.stringify(initialData));

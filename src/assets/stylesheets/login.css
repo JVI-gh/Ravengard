@@ -24,10 +24,20 @@ h1 {
     }
   } */
   
-  button[type="submit"] {
+  button[type="submit"], #NewChar {
+    width: 45%;
     background-color: #1d3e3c;
     color: #fff;
     padding: 0.5rem 1.5rem;
+    margin: 2.5% 0 10% 0;
+  }
+
+  .next {
+    width: 100%;
+    background-color: #1d3e3c;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    margin: 2.5% 0 10% 0;
   }
   
   input[type="text"],
@@ -48,4 +58,24 @@ h1 {
     border-right: 3px solid #1d3e3c;
     border-radius: 0%;
     color: #fff;
+  }
+
+  .class-button {
+    width: 30%;
+    text-align: center;
+    margin: 1rem 0.5rem;
+    color: #fff;
+    background-color: #1d3e3c;
+    display: inline-block;
+    transition: color .45s cubic-bezier(.785, .135, .15, .86),border .45s cubic-bezier(.785, .135, .15, .86);
+  }
+
+  .class-button:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  .player-stat {
+    width: auto;
+    display: inline-block;
   }
